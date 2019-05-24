@@ -15,13 +15,15 @@ import movieRatings from '../../data/movie-ratings';
 
 //new code
 import './Main.scss';
+import Dropdowns from './dropdowns.js'
 
 import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom';
 
 class Main extends Component {
   render() {
     return (
-        <h1>hello form main</h1>
+      <h1>hello form main</h1>
+      <Dropdowns />
     )
   }
 }
