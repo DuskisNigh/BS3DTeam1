@@ -1,10 +1,54 @@
 .main-div {
-     border: 2px solid red;
+     background: linear-gradient(to bottom, rgba(188,0,255,0.86), rgba(34,0,255,0.52));
      display: flex;
      flex-direction: column;
+     justify-content: flex-start;
+     height: 86.25vh;
+     margin: 0;
 
-     & .dd-industry-div {
+     & .format-div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 50%;
+          color: white;
+          position: relative;
+     
+          & .dd-industry-div {
 
-          
+               & .dd-industry {
+                    border-radius: 5px;
+                    height: 2rem;
+                    width: 25rem;
+               }
+          }
+
+          & .dd-infoTech-div {
+
+               & .dd-infoTech {
+                    border-radius: 5px;
+                    height: 2rem;
+                    width: 25rem;
+               }
+          }
+
+          & .enter-bttn-div {
+
+               & .enter-bttn {
+                    border-radius: 5px;
+                    // border: 2px solid rgba(134,221,255,0.80);
+                    background-color: rgba(134,221,255,0.80);
+                    outline: none;
+                    width: 7rem;
+                    height: 3rem;
+               }
+          }
+
+          & .imgWoman {
+               position: absolute;
+               top: 10rem;
+               left: 10rem;
+               width: 30%;
+          }
      }
 }
