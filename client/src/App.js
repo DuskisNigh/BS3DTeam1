@@ -14,18 +14,19 @@ import weatherData from './data/weather-data';
 import pineappleData from './data/pineapple-on-pizza';
 import movieRatings from './data/movie-ratings';
 
+import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom';
+import Main from './components/Main/Main.js';
+import Chart from './components/Chart/Chart.js';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <BarChart data={basicBarData} height={100} width={50} />
-        <PieChart title="Commuting to work in Toronto" data={basicPieData} height={20} width={20} />
-        <ScatterPlot title="Scatter plot" data={basicScatter} height={100} width={100} />
-        <div className="big-space"></div>
-        <WeatherGraph title="Temperatures Jan - Jun" data={weatherData} />
-        <PineapplePie title="Pineapple Controversy" data={pineappleData} />
-        <MovieRatings title="Movie Ratings" data={movieRatings} />
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Main}/>
+          <Route path="/chart" component={Chart}/>
+        </Switch>
+      </Router>
     );
   }
 }
