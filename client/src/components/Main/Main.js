@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import BarChart from '../BarChart';
-import PieChart from '../PieChart';
-import ScatterPlot from '../ScatterPlot';
-import WeatherGraph from '../WeatherGraph';
-import PineapplePie from '../PineapplePie';
-import MovieRatings from '../MovieRatings';
-import Nav from '../Nav/Nav';
-
 import basicBarData from '../../data/basic-bar';
+import Nav from '../Nav/Nav';
 
 //new code
 import './Main.scss';
