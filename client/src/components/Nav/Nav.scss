@@ -1,3 +1,42 @@
 .nav {
     background: rgba(188,0,255,0.86);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__wrap{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-left: 4rem;
+    }
+
+    &__logo {
+        background: #fff;
+        margin: 0;
+        height: 61px;
+        width: 61px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo-letter {
+        font-size: 25px;
+    }
+
+    &__company {
+        color: #fff;
+        margin-left: 0.5rem;
+    }
+
+    &__faq {
+        color: #fff;
+        margin-right: 4rem;
+    }
 }
