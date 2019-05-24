@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Dropdowns extends Component {
    render() {
 		return (
-			<div>
-				<div>
+			<div className="main-div">
+				<div className="dd-industry-div">
 					<select className="dd-industry" name="dd-industry" id="dd-industry" placeholder="Industry">
 						<option value="RetailTrade">Retail Trade</option>
 						<option value="PSTServices">Professional, Scientific, and Technical Services</option>
@@ -24,7 +24,7 @@ class Dropdowns extends Component {
 						<option value="Other">Other Services (Except Public Administration)</option>
 					</select>
 				</div>
-				<div>
+				<div className="dd-infoTech-div">
 					<select className="dd-infoTech" name="dd-infoTech" id="dd-infoTech" placeholder="Information Technology">
 						<option value="DataAnalytics">Data Analytics</option>
 						<option value="Accounting">Accounting/Bookkeeping Software</option>
