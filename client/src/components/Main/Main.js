@@ -5,6 +5,7 @@ import ScatterPlot from '../ScatterPlot';
 import WeatherGraph from '../WeatherGraph';
 import PineapplePie from '../PineapplePie';
 import MovieRatings from '../MovieRatings';
+import Nav from '../Nav/Nav';
 
 import basicBarData from '../../data/basic-bar';
 import basicPieData from '../../data/basic-pie';
@@ -21,7 +22,10 @@ import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom';
 class Main extends Component {
   render() {
     return (
+      <>
+      <Nav />
         <h1>hello form main</h1>
+        </>
     )
   }
 }
