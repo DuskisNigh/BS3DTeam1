@@ -5,7 +5,8 @@ import Nav from '../Nav/Nav';
 
 //new code
 import './Main.scss';
-import Dropdowns from './dropdowns.js'
+import Dropdowns from './dropdowns.js';
+import './dropdowns.scss';
 
 class Main extends Component {
   render() {
