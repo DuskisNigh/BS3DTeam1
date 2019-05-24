@@ -11,6 +11,7 @@ class Main extends Component {
   render() {
     return (
       <div>
+          <Nav />
           <Dropdowns />
       </div>
     )
